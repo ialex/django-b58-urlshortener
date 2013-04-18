@@ -11,19 +11,19 @@ https://github.com/OttoYiu/django-cors-headers
 
 Usage:
 ##
-from django.test.client import Client
-c = Client()
-response = c.post('/',{'url': 'http://google.com'})
-print response.content
+    from django.test.client import Client
+    c = Client()
+    response = c.post('/',{'url': 'http://google.com'})
+    print response.content
 
 # it accepts calls from ajax (CORS)
 
-var url = "http://chuchita.com"
-$.ajax({
-    url: "http://yourdomain.com/api/?url=" + url,
-    type: "GET",
-    success: function(data){
-        console.log(data.short);
-        console.log(data.long);
-    }
-});
+    var url = "http://chuchita.com"
+    $.ajax({
+        url: "http://yourdomain.com/api/?url=" + url,
+        type: "GET",
+        success: function(data){
+            console.log(data.short);
+            console.log(data.long);
+       }
+    });
