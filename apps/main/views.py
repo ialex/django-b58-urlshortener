@@ -41,4 +41,4 @@ def redirect(request, hash):
         return HttpResponseRedirect(url.url)
     except Url.DoesNotExist:
         pass
-    return HttpResponseRedirect('http://pixfirst.com?unknown=true')
+    return HttpResponseRedirect(settings.REDIRECT_URL_ON_FAIL)

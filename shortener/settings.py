@@ -21,6 +21,7 @@ DATABASES = {
 }
 
 DOMAIN = 'http://127.0.0.1:8000/'
+REDIRECT_URL_ON_FAIL = "http://pixfirst.com?fail=True"
 
 # https://github.com/OttoYiu/django-cors-headers
 CORS_ORIGIN_ALLOW_ALL = True
