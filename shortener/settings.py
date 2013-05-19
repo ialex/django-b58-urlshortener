@@ -157,3 +157,9 @@ LOGGING = {
         },
     }
 }
+
+# OVERRIDE this whit local settings
+try:
+    from local_settings import *
+except ImportError:
+    print traceback.format_exc()
